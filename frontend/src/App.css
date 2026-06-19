@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #d9d0c3;
+  --card: #efe7dc;
+  --text: #2f2924;
+  --accent: #9c7346;
+  --border: #c8b8a4;
+}
+
+.app.dark {
+  --bg: #050505;
+  --card: #111111;
+  --text: #f5f5f5;
+  --accent: #9b5cff;
+  --border: #242424;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.theme-btn {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hero {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
+
+.brand-name {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+
+  color: var(--text);
+}
+
+.app.dark .brand-name {
+  color: #b388ff;
+
+  text-shadow:
+    0 0 10px rgba(179,136,255,0.35),
+    0 0 20px rgba(179,136,255,0.15);
+}
+
+.subtitle {
+  margin-top: 5px;
+  font-size: 1rem;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+textarea {
+  width: 100%;
+  max-width: 950px;
+  min-height: 220px;
+
+  display: block;
+  margin: auto;
+
+  border-radius: 28px;
+  border: 1px solid var(--border);
+
+  background: var(--card);
+  color: var(--text);
+
+  padding: 28px;
+  font-size: 18px;
+
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+textarea::placeholder {
+  color: #888;
+}
+
+.action-area {
+  text-align: center;
+}
+
+.analyze-btn {
+  margin-top: 24px;
+
+  background: var(--accent);
+  color: white;
+
+  border: none;
+  border-radius: 18px;
+
+  padding: 16px 38px;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.app.dark .analyze-btn {
+  box-shadow: 0 0 20px rgba(155,92,255,0.4);
+}
+
+.analysis {
+  margin-top: 45px;
+
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: var(--card);
+
+  border: 1px solid var(--border);
+  border-radius: 28px;
+
+  padding: 35px;
+}
+
+.analysis h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.analysis-content {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-title {
+  display: block;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: var(--accent);
+
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.app.dark .section-title {
+  color: #b388ff;
+}
+
+.app.dark .analysis {
+  box-shadow:
+    0 0 30px rgba(155,92,255,0.08);
+}
